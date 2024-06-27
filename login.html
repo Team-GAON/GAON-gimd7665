@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 500px;
+            border: 1px solid;
+            padding: 20px;
+            margin: auto;
+        }
+        
+        h2 {
+            color: aquamarine;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>로그인 페이지</h2>
+        <input type="text" id="Ip" placeholder="아이디를 입력해주세요">
+        <input type="password" id="IP" placeholder="비밀번호를 입력해주세요">
+        <button id="bt" onclick="WG()">로그인 하기</button>
+    </div>
+    <script>
+        const IP = document.getElementById('Ip');
+        const Ip = document.getElementById('IP')
+        const BT = document.getElementById('bt');
+        const WG = () => {
+            console.log(IP.value);
+            console.log(Ip.value);
+        }
+    </script>
+</body>
+
+</html>
